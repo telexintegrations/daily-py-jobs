@@ -25,8 +25,8 @@ jobs:
         run: npm run build
 
       - name: Deploy to Heroku
-        env:
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: |
-          git remote add heroku https://git.heroku.com/daily-py-jobs.git
-          git push heroku main
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: "daily-py-jobs"
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
