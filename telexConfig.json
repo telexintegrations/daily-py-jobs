@@ -1,0 +1,36 @@
+{
+    "data": {
+      "date": {
+        "created_at": "2025-02-20",
+        "updated_at": "2025-02-20"
+      },
+      "descriptions": {
+        "app_name": "Daily Python Jobs",
+        "app_description": "This integration sends the latest python jobs everyday",
+        "app_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png",
+        "app_url": "https://app.url",
+        "background_color": "#fff"
+      },
+      "is_active": true,
+      "integration_type": "interval",
+      "key_features": [
+        "Python Jobs Everyday"
+      ],
+      "author": "iConnell",
+      "settings": [
+        {
+          "label": "Prefered Framework",
+          "type": "dropdown",
+          "required": true,
+          "default": "Django",
+          "options": [
+            "Django",
+            "Flask",
+            "Fastapi"
+          ]
+        }
+      ],
+      "target_url": "https://target.url",
+      "tick_url": "https:tick.url"
+    }
+  }
