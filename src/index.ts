@@ -1,6 +1,7 @@
 import express, { Express, Request, Response, Application } from "express";
 import dotenv from "dotenv";
 import path from "path";
+import cors from "cors";
 
 const publicPath = path.join(__dirname, "public");
 
@@ -9,6 +10,8 @@ dotenv.config();
 
 const app: Application = express();
 const port = process.env.PORT || 8000;
+
+app.use(cors());
 
 app.use(express.static(publicPath));
 
