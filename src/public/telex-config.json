@@ -11,6 +11,7 @@
         "app_url": "https://app.url",
         "background_color": "#fff"
       },
+      "integration_category": "Task Automation",
       "is_active": true,
       "integration_type": "interval",
       "key_features": [
