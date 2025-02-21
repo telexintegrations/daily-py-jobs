@@ -8,7 +8,7 @@
         "app_name": "Daily Python Jobs",
         "app_description": "This integration sends the latest python jobs everyday",
         "app_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png",
-        "app_url": "https://app.url",
+        "app_url": "https://daily-py-jobs-cf03a679f137.herokuapp.com/",
         "background_color": "#fff"
       },
       "integration_category": "Task Automation",
@@ -19,6 +19,12 @@
       ],
       "author": "iConnell",
       "settings": [
+        {
+          "label": "interval",
+          "type": "text",
+          "required": true,
+          "default": "*/2 * * * *"
+        },
         {
           "label": "Prefered Framework",
           "type": "dropdown",
@@ -32,6 +38,6 @@
         }
       ],
       "target_url": "https://target.url",
-      "tick_url": "https:tick.url"
+      "tick_url": "https://daily-py-jobs-cf03a679f137.herokuapp.com/telex/jobs"
     }
   }
