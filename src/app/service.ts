@@ -172,13 +172,13 @@ export const telexConfig = async (req: Request, res: Response) => {
   const responseData = {
     data: {
       date: {
-        created_at: "2025-02-20",
-        updated_at: "2025-02-20",
+        created_at: new Date().toISOString().split("T")[0],
+        updated_at: new Date().toISOString().split("T")[0],
       },
       descriptions: {
         app_name: "Daily Python Jobs",
         app_description:
-          "This integration sends the latest python jobs everyday",
+          "This app sends the latest Python job postings every day, helping developers stay updated with new opportunities in the Python ecosystem.",
         app_logo:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png",
         app_url: "https://daily-py-jobs-cf03a679f137.herokuapp.com/",
@@ -187,7 +187,7 @@ export const telexConfig = async (req: Request, res: Response) => {
       integration_category: "Task Automation",
       is_active: true,
       integration_type: "interval",
-      key_features: ["Python Jobs Everyday"],
+      key_features: ["New Python Jobs Everyday"],
       author: "iConnell",
       settings: [
         {

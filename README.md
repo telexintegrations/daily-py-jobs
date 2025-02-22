@@ -180,6 +180,20 @@ Returns the configuration data for the integration.
 }
 ```
 
+## Deployment
+
+Deploy the app on any platform of your choice.
+
+Then head over to [Telex](https://telex.im), sign up, create an organization and a channel.
+
+Go to the `Apps` section and click on `Add New`. Enter the URL to the JSON config.
+
+Then toggle the status switch to activate the app.
+
+Next, click on `Manage App`. On the `Settings` tab, you'll find the job preferences. Make your choices and save.
+
+Finally, head over to your channel. At the right time according to your settings, the app will send job posts matching your preferences.
+
 ## Testing
 
 To run the tests, use the following command:
