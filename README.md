@@ -180,6 +180,31 @@ Returns the configuration data for the integration.
 }
 ```
 
+## Deployment
+
+Deploy the app on any platform of your choice.
+
+Then head over to [Telex](https://telex.im), sign up, create an organization and a channel.
+
+Go to the `Apps` section and click on `Add New`. Enter the URL to the JSON config.
+
+<img width="857" alt="Screenshot 2025-02-22 at 4 00 25 PM" src="https://github.com/user-attachments/assets/3d0d3b10-9c37-4049-a29f-7b5cce337153" />
+
+Then toggle the status switch to activate the app.
+
+<img width="854" alt="Screenshot 2025-02-22 at 4 03 58 PM" src="https://github.com/user-attachments/assets/0fff746b-6f81-472a-b25a-87eac964c317" />
+
+Next, click on `Manage App`. On the `Settings` tab, you'll find the job preferences. Make your choices and save.
+
+<img width="855" alt="Screenshot 2025-02-22 at 4 06 19 PM" src="https://github.com/user-attachments/assets/48f131b4-6705-4f2b-9f4b-0ba9ecb2748b" />
+
+Finally, head over to your channel. At the right time according to your settings, the app will send job posts matching your preferences.
+
+<img width="1046" alt="Screenshot 2025-02-22 at 4 10 40 PM" src="https://github.com/user-attachments/assets/f1641688-5064-4286-ac3d-cd2042d0428f" />
+
+<img width="1044" alt="Screenshot 2025-02-22 at 4 11 12 PM" src="https://github.com/user-attachments/assets/e5171d94-738f-415a-afc5-2e7d5dff254e" />
+
+
 ## Testing
 
 To run the tests, use the following command:
