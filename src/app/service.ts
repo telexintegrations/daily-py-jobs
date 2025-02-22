@@ -150,22 +150,32 @@ export const handleJobs = async (
 };
 
 export const telexWebhook = async (req: Request, res: Response) => {
-  const { return_url, settings } = req.body;
+  try {
+    const { return_url, settings } = req.body;
+    console.log("webhook request received --->", settings);
 
-  const settingsObject = settings.reduce(
-    (acc: Record<string, string>, setting: ITelexSettings) => {
-      acc[setting.label.toLowerCase().split(" ").join("_")] = setting.default
-        .toLowerCase()
-        .split(" ")
-        .join("_");
-      return acc;
-    },
-    {} as Record<string, string>
-  );
+    const settingsObject = settings.reduce(
+      (acc: Record<string, string>, setting: ITelexSettings) => {
+        acc[setting.label.toLowerCase().split(" ").join("_")] = setting.default
+          .toLowerCase()
+          .split(" ")
+          .join("_");
+        return acc;
+      },
+      {} as Record<string, string>
+    );
 
-  handleJobs(return_url, settingsObject);
+    handleJobs(return_url, settingsObject);
 
-  res.status(202).json({ status: "accepted" });
+    res.status(202).json({ status: "accepted" });
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error("App.service.telexWebhook ---> ", error.message);
+    } else {
+      console.error("App.Service.telexWebhook --->", error);
+    }
+    res.status(500).json({ status: "error" });
+  }
 };
 
 export const telexConfig = async (req: Request, res: Response) => {

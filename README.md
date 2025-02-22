@@ -196,6 +196,19 @@ Then toggle the status switch to activate the app.
 
 Next, click on `Manage App`. On the `Settings` tab, you'll find the job preferences. Make your choices and save.
 
+### Setings Configs
+- interval
+  - How often you want to receive job alerts (in crontab format) default is `0 9 * * *` (Everyday at 9am)
+- Location
+  - Location (City or country) of the job - choose from the dropdown. Default is `All Locations`
+- Experience Level
+  - The level of experience required for the job. Choose from the dropdown. Default is `All Levels`. Options include `Entry`, `Associate`, `Mid`, and `Senior`.
+- Employment Type
+  - The type of employment for the job. Choose from the dropdown. Default is `All Types`. Options include `Full-time`, `Part-time`, and `Contract`.
+- Prefered Framework
+  - The preferred Python framework for the job. Choose from the dropdown. Default is `All Frameworks`. Options include `Django`, `Flask`, and `FastAPI`.
+
+
 <img width="855" alt="Screenshot 2025-02-22 at 4 06 19 PM" src="https://github.com/user-attachments/assets/48f131b4-6705-4f2b-9f4b-0ba9ecb2748b" />
 
 Finally, head over to your channel. At the right time according to your settings, the app will send job posts matching your preferences.
