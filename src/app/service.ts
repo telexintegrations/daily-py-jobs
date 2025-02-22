@@ -194,7 +194,7 @@ export const telexConfig = async (req: Request, res: Response) => {
           label: "interval",
           type: "text",
           required: true,
-          default: "*/2 * * * *",
+          default: "0 9 * * *",
         },
         {
           label: "Location",
